@@ -196,6 +196,8 @@ class Attention(nn.Module):
         self.head_dim = config.head_dim
         self.n_local_heads = config.n_local_heads
         self.dim = config.dim
+        self.dtype = config.dtype
+        print(f"Model dtype: {self.dtype}")
 
     def forward(
         self,
